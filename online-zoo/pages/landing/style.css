@@ -31,6 +31,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url('/fonts/MontserratAlternates-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+
+}
+
 /* Normalize */
 html {
     -webkit-font-smoothing: antialiased;
@@ -711,11 +720,11 @@ svg {
 
 .payFeed {
     margin-top: 150px;
-    height: 2205px;
+    height: 2305px;
     width: 1920px;
     padding-inline: 260px;
     background-color: var(--color-navy);
-    color: var(--color-white)
+    color: var(--color-white);
 }
 
 .payFeed-container {
@@ -810,6 +819,154 @@ svg {
 .payFeed-donate:hover {
     background-color: #d26004;
 }
+
+/* FEEDBACK */
+
+.feedback {
+    height: 1776px;
+    background-image: url('images/imageFeedback.png');
+    display: flex;
+    gap: 40px;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.feedback-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: var(--color-white);
+}
+
+.feedback-header {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: normal;
+    width: 440px;
+    line-height: normal;
+}
+
+.feedback-text {
+    width: 560px;
+    line-height: 1.3;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: left;
+}
+
+.feedback-comments {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.feedback-test {
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.comment {
+    width: 515px;
+    height: 463px;
+    border-radius: 5px;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 37px;
+    padding-right: 50px;
+}
+
+.comment-quotes {
+    width: 120px;
+    height: 120px;
+    font-family: 'MontserratAlternates';
+    font-size: 120px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-turquoise);
+    letter-spacing: 1.2px;
+}
+
+.comment-header {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--color-black)
+}
+
+.comment-text {
+    width: 415px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.comment-author {
+    margin-top: auto;
+    margin-bottom: 70px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    color: var(--color-black);
+    text-transform: uppercase;
+}
+
+.comments-buttons {
+    display: flex;
+    gap: 60px;
+
+}
+
+.comment-button {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: solid 1px var(--color-white);
+    background-color: transparent;
+    color: var(--color-white)
+}
+
+
+.leftArrow {
+    transform: rotate(180deg);
+}
+
+.comment-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-black)
+}
+
+.feedback-leave {
+    width: 359px;
+    height: 74px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    position: absolute;
+    left: 261px;
+    bottom: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    background: transparent;
+    color: var(--color-white);
+    text-transform: uppercase;
+    gap: 10px;
+}
+
 
 @media (max-width: 640px) {
     .header-container {
