@@ -707,8 +707,109 @@ svg {
     flex-shrink: 0;
 }
 
+/* PAY AND FEED */
 
+.payFeed {
+    margin-top: 150px;
+    height: 2205px;
+    width: 1920px;
+    padding-inline: 260px;
+    background-color: var(--color-navy);
+    color: var(--color-white)
+}
 
+.payFeed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 115px
+}
+
+.payFeed-header {
+    margin-top: 91px;
+    font-weight: 600;
+    font-size: 54px;
+    letter-spacing: normal;
+    font-style: normal;
+}
+
+.separator {
+    display: flex;
+    gap: clamp(16px, 5vw, 93px);
+    flex-direction: row;
+    align-items: center;
+}
+
+.separator span {
+    font-size: 26px;
+    font-weight: 500;
+    flex: 0 0 auto;
+}
+
+.payFeed-border {
+    height: 1px;
+    flex: 1;
+    background-color: var(--color-white);
+}
+
+.reason {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+}
+
+.info-reason {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-logo {
+    width: 106px;
+    height: 80px;
+}
+
+.reason-header {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+
+.reason-text {
+    margin-top: 20px;
+    max-width: 560px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.payFeed-image {
+    width: 560px;
+    height: 364px;
+}
+
+.payFeed-donate {
+    margin-top: 20px;
+    width: 240px;
+    height: 74px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-orange);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-white);
+    gap: 10px;
+    border: 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.payFeed-donate:hover {
+    background-color: #d26004;
+}
 
 @media (max-width: 640px) {
     .header-container {
