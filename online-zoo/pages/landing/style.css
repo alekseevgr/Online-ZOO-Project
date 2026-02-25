@@ -661,6 +661,7 @@ svg {
 }
 
 .animal-button {
+    margin-top: auto;
     color: var(--color-orange);
     background-color: var(--color-navy);
     width: 240px;
@@ -965,6 +966,103 @@ svg {
     color: var(--color-white);
     text-transform: uppercase;
     gap: 10px;
+}
+
+/* FAVOURITE */
+
+.favourite {
+    min-height: 2965px;
+    padding-inline: 260px;
+}
+
+.favourite-header {
+    margin-top: 136px;
+    font-weight: 600;
+    font-size: 54px;
+    color: var(--color-turquoise);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: normal;
+    max-width: 655px;
+    margin-inline: auto;
+}
+
+.favourite-text {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--color-black);
+    max-width: 537px;
+    margin-inline: auto;
+}
+
+.favourite-cards {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+
+}
+
+.favourite-koala {
+    grid-column: span 2;
+}
+
+.donateCard {
+    width: 440px;
+    height: 658px;
+    border-radius: 5px;
+    background-color: var(--color-navy);
+    display: flex;
+    flex-direction: column;
+}
+
+.donateCard-image {
+    width: 100%;
+    display: block;
+}
+
+.donateCard-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 25px 50px;
+}
+
+.donateCard-text {
+    margin-top: 30px 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-white);
+    max-width: 390px;
+}
+
+.donateCard-button {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 142px;
+    height: 74px;
+    background: transparent;
+    color: var(--color-orange);
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.favouriteTouchAnimal {
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 
