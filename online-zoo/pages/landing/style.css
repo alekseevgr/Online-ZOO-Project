@@ -847,7 +847,7 @@ svg {
 
 .feedback {
     height: 1776px;
-    background-image: url('images/imageFeedback.png');
+    background-image: url('/images/imageFeedback.png');
     display: flex;
     gap: 40px;
     position: relative;
