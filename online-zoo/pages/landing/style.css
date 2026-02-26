@@ -198,6 +198,11 @@ a:active {
 }
 
 /* layout */
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     font-family: var(--font-family-base);
     background-color: var(--color-white);
