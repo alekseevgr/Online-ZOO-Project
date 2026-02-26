@@ -279,6 +279,10 @@ svg {
     letter-spacing: normal;
 }
 
+.header-menu-link.active {
+    color: var(--color-turquoise);
+}
+
 .header-menu-link:hover {
     color: var(--color-turquoise);
 }
@@ -730,6 +734,11 @@ svg {
     flex-shrink: 0;
 }
 
+.chooseAnimal:hover {
+    background-color: var(--color-navy);
+    color: var(--color-white)
+}
+
 /* PAY AND FEED */
 
 .payFeed {
@@ -981,6 +990,11 @@ svg {
     gap: 10px;
 }
 
+.feedback-leave:hover {
+    background-color: var(--color-turquoise);
+    border: 0;
+}
+
 /* FAVOURITE */
 
 .favourite {
@@ -1082,6 +1096,12 @@ svg {
     border: 0;
     text-transform: uppercase;
     font-weight: 600;
+    border-radius: 5px;
+}
+
+.donateCard-button:hover {
+    background-color: var(--color-orange);
+    color: var(--color-white)
 }
 
 .favouriteTouchAnimal {
@@ -1140,6 +1160,14 @@ svg {
     font-size: 18px;
 }
 
+.footer-menu-link:hover {
+    color: var(--color-turquoise)
+}
+
+.footer-menu-link.active {
+    color: var(--color-turquoise)
+}
+
 .footer-border {
     height: 1px;
     background-color: var(--color-white);
@@ -1170,6 +1198,10 @@ svg {
     flex-shrink: 0;
 }
 
+.footer-button:hover {
+    background-color: var(--color-white);
+    color: var(--color-navy)
+}
 
 
 @media (max-width: 640px) {
