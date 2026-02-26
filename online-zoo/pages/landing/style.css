@@ -260,6 +260,10 @@ svg {
     display: block;
 }
 
+.header-logo-icon {
+    flex-shrink: 0;
+}
+
 .header-burger {
     display: none;
 }
@@ -344,9 +348,9 @@ svg {
 .main-about {
     position: relative;
     overflow: hidden;
-    height: 900px;
+    height: 754px;
     display: flex;
-    background-image: url("/images/panda.svg");
+    background-image: url("/images/panda.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -398,6 +402,10 @@ svg {
     padding-top: 150px;
     gap: 150px;
     height: 1583px;
+    width: 100%;
+    padding-left: 260px;
+    padding-right: 0;
+    margin: 0 auto;
 }
 
 
@@ -447,6 +455,10 @@ svg {
     display: flex;
     flex-direction: row;
     gap: 191px;
+    width: 100%;
+    padding-left: 260px;
+    padding-right: 0;
+    margin: 0 auto;
 }
 
 
@@ -1515,23 +1527,10 @@ svg {
 
 
 
-@media (max-width: 640px) {
+@media (max-width: 700px) {
     .header-container {
         padding-inline: 20px;
     }
-
-    .main-container {
-        width: 100%;
-        max-width: 640px;
-        padding-inline: 20px;
-    }
-
-    .main-about-header {
-        padding-top: 50px;
-        font-size: 72px;
-        letter-spacing: 0.72px;
-    }
-
 
     .header-menu,
     .header-socialMenu {
@@ -1556,6 +1555,7 @@ svg {
         background: none;
         border: none;
         padding: 0;
+        margin-right: 26px;
     }
 
     .header-burger span {
@@ -1563,4 +1563,371 @@ svg {
         background: var(--color-black);
         border-radius: 2px;
     }
+
+    .main-container {
+        width: 100%;
+        max-width: 640px;
+        padding-inline: 20px;
+    }
+
+    .main-about-header {
+        font-size: 72px;
+        letter-spacing: 0.72px;
+    }
+
+
+    /* main */
+    .main {
+        max-width: 754px;
+        margin: 0 auto;
+    }
+
+
+    .main-container {
+        gap: 30px;
+        padding-top: 50px;
+        padding-inline: 20px;
+    }
+
+    .main-about {
+        height: 650px;
+        background-image: url('/images/panda.png');
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+    }
+
+    .main-about-header {
+        letter-spacing: 0.72px;
+        font-size: 72px;
+        height: 334px;
+        max-width: 600px;
+    }
+
+
+    .main-about-text {
+        max-width: 430px;
+        margin: 0;
+    }
+
+    .button-about {
+        width: 285px;
+    }
+
+    /* WELCOME */
+    .welcome-container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 1850px;
+        width: 100%;
+        padding-inline: 0;
+        margin: 0 auto;
+    }
+
+    .welcome-image {
+        height: 438px;
+    }
+
+    .welcome-image,
+    .welcome-element-info {
+        width: 640px;
+    }
+
+    .welcome-element-info {
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .welcome-element-zoo {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .welcome-element-eagles {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 30px;
+    }
+
+    .main-welcome-text,
+    .main-welcome-header {
+        max-width: none;
+        width: 100%;
+        padding-inline: 20px;
+    }
+
+    /* quick donate */
+
+    .quickDonate {
+        height: 459px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 0;
+        align-items: center;
+        text-align: center;
+        padding-inline: 20px;
+        gap: 30px;
+    }
+
+
+    .quickDonate-text {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 18px;
+        height: 79px;
+        padding-inline: 0;
+        margin-bottom: 30px;
+    }
+
+    .quickDonate-info,
+    .quickDonate-form {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .quickDonate-header {
+        height: 102px;
+        width: 565px;
+        text-align: center;
+        margin-inline: 37px;
+    }
+
+    .quickDonate-form {
+        text-align: center;
+    }
+
+
+
+    /* animal */
+    .animal-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .animal-header {
+        padding-top: 100px;
+    }
+
+    .animal-header,
+    .animal-text,
+    .animalPrevNext {
+        align-self: center;
+        text-align: center;
+    }
+
+
+    .animal-text {
+        padding-top: 30px;
+        width: 830px;
+        height: 136px;
+    }
+
+    .animalPrevNext {
+        margin-top: 100px;
+    }
+
+    .button-animalPrevNext {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .animal-slider {
+        padding-top: 50px;
+        padding-left: 35px;
+    }
+
+
+    .animal-track {
+        gap: 20px;
+    }
+
+    .animal {
+        width: 455px;
+        height: 716px;
+        border-radius: 5px;
+    }
+
+    .animal-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 380px;
+    }
+
+
+    .chooseAnimal {
+        margin: 50px auto 0;
+    }
+
+    /* PAY AND FEED */
+
+    .payFeed {
+        height: 2300px;
+        width: 1200px;
+        padding-inline: 40px;
+    }
+
+    .payFeed-container {
+        gap: 95px
+    }
+
+    .payFeed-header {
+        padding-left: 60px;
+    }
+
+
+    .reason {
+        gap: 20px;
+    }
+
+    .info-reason {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .reason-text {
+        max-width: 560px;
+        line-height: 1.5;
+        font-size: 18px;
+        font-weight: 400;
+
+    }
+
+    .info-logo {
+        margin: 0 auto;
+    }
+
+    .payFeed-image {
+        width: 560px;
+        height: 364px;
+
+    }
+
+    .payFeed-donate {
+        margin-top: 100px;
+    }
+
+    /* FEEDBACK */
+
+    .feedback {
+        height: 1750px;
+        padding-bottom: 150px;
+        padding-left: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .feedback-info {
+        gap: 30px;
+    }
+
+    .feedback-comments {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding-left: 100px;
+        width: 100%;
+    }
+
+
+
+    .comments-buttons {
+        padding-left: 940px;
+    }
+
+
+    .feedback-leave {
+        left: 135px;
+        bottom: 150px;
+    }
+
+    /* FAVOURITE */
+
+    .favourite {
+        min-height: 1000px;
+        padding-inline: 135px;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .favourite-header {
+        margin-top: 150px;
+    }
+
+    .favourite-text {
+        margin-top: 30px;
+    }
+
+    .favourite-cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .favourite-cards>* {
+        min-width: 0;
+    }
+
+    .favourite-koala {
+        grid-column: span 2;
+        width: 930px;
+        height: 470px;
+        object-fit: cover;
+        display: block;
+        border-radius: 5px;
+    }
+
+    .donateCard {
+        height: 639px;
+    }
+
+    .chooseAnimal {
+        margin-top: 100px;
+    }
+
+    .favouriteTouchAnimal {
+        padding-inline: 0;
+        margin: 150px 0;
+        width: 100vw;
+
+    }
+
+    /* FOOTER */
+    .footer {
+        max-width: 1200px;
+        height: 329px;
+        background-color: var(--color-navy);
+        padding-inline: 40px;
+    }
+
+    .footer-info {
+        margin: 70px 0;
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-menu-list {
+        gap: 20px;
+    }
+
 }
