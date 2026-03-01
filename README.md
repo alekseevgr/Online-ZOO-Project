@@ -2,4 +2,4 @@
 
 # Vercel deploy:
 
-https://online-zoo-project.vercel.app/
+https://onlinezoo.vercel.app/
